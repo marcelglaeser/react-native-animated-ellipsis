@@ -53,7 +53,6 @@ export default class AnimatedEllipsis extends Component {
   }
 
   render() {
-    console.log(this.props.style);
     let dots = this._animation_state.dot_opacities.map((o, i) => React.createElement(
       Animated.Text,
       { key: i, style: { opacity: o } },
